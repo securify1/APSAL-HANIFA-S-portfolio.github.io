@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+#page1 {
+    background-color: #f4f4f4;
+}
+
+.fullscreen-image1 {
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fullscreen-image2 {
+    background-image: url('3.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fullscreen-image4 {
+    background-image: url('4.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fullscreen-image5 {
+    background-image: url('5.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fullscreen-image6 {
+    background-image: url('6.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fullscreen-image7 {
+    background-image: url('7.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fullscreen-image8 {
+    background-image: url('8.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fullscreen-image9 {
+    background-image: url('9.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fullscreen-image10 {
+    background-image: url('10.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
