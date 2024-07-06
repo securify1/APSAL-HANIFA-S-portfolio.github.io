@@ -1,16 +1,97 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Passionate IoT & Web Development Specialist | Associate Founder at CODING & APP PRO ACADEMY
-Sethu Institute of Technology Student | YouTuber & Instagram Influencer
-
-Starting my tech journey in grade 7, I now specialize in IoT and web development. As the Associate Founder and Head of Education at CODING & APP PRO ACADEMY, I share insights through my YouTube channel, Apsal's View, and Instagram page, Tech Life (1,000+ followers). Skilled in programming, game and app development, cybersecurity, and web development, I currently work as a website developer at Kalaimagal Groups of Schools. Proficient in C, C++, Python, HTML, and CSS, I aim to become a full-stack developer and tech entrepreneur. Connect with me to discuss tech, education, and innovative projects!">
-    <meta name ="keyword" content="IoT specialist, web development, CODING & APP PRO ACADEMY, YouTube tech channel, Instagram tech influencer, full-stack developer, tech entrepreneur.">
+    Sethu Institute of Technology Student | YouTuber & Instagram Influencer Starting my tech journey in grade 7, I now specialize in IoT and web development. As the Associate Founder and Head of Education at CODING & APP PRO ACADEMY, I share insights through my YouTube channel, Apsal's View, and Instagram page, Tech Life (1,000+ followers). Skilled in programming, game and app development, cybersecurity, and web development, I currently work as a website developer at Kalaimagal Groups of Schools. Proficient in C, C++, Python, HTML, and CSS, I aim to become a full-stack developer and tech entrepreneur. Connect with me to discuss tech, education, and innovative projects!">
+    <meta name="keywords" content="IoT specialist, web development, CODING & APP PRO ACADEMY, YouTube tech channel, Instagram tech influencer, full-stack developer, tech entrepreneur.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="my profile.jpeg" type="image">
+    <link rel="icon" href="my profile.jpeg" type="image/png">
     <title>Apsal Hanifa S</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        /* Fullscreen Images */
+        .page {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .fullscreen-image1 {
+            background-image: url('image1.jpg');
+        }
+
+        .fullscreen-image2 {
+            background-image: url('image2.jpg');
+        }
+
+        /* Add more as needed */
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .page {
+                height: auto; /* Let the height be determined by the content */
+                padding: 50px 0; /* Add some padding */
+            }
+
+            .fullscreen-image1, .fullscreen-image2, .fullscreen-image4,
+            .fullscreen-image5, .fullscreen-image6, .fullscreen-image7,
+            .fullscreen-image8, .fullscreen-image9, .fullscreen-image10 {
+                background-size: contain; /* Ensure the image fits within the screen */
+                background-repeat: no-repeat;
+            }
+        }
+
+        /* Circle Icon */
+        .circle-icon {
+            width: 100px; /* Set the size of the icon */
+            height: 100px;
+            border-radius: 50%;
+            background: url('favicon.png') no-repeat center center;
+            background-size: cover;
+            margin: 20px auto; /* Center the icon horizontally */
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -27,25 +108,16 @@ Starting my tech journey in grade 7, I now specialize in IoT and web development
         </ul>
     </nav>
     
-    <div id="page2" class="page fullscreen-image1">
-    </div>
-    <div id="page3" class="page fullscreen-image2">
-    </div>
-    <div id="page4" class="page fullscreen-image4">
-    </div>
-    <div id="page5" class="page fullscreen-image5">
-    </div>
-    <div id="page6" class="page fullscreen-image6">
-    </div>
-    <div id="page7" class="page fullscreen-image7">
-    </div>
-    <div id="page8" class="page fullscreen-image8">
-    </div>
-    <div id="page9" class="page fullscreen-image9">
-    </div>
-    <div id="page10" class="page fullscreen-image10">
-        </div>
-    </div>
+    <div class="circle-icon"></div> <!-- Circle Icon -->
+    
+    <div id="page2" class="page fullscreen-image1"></div>
+    <div id="page3" class="page fullscreen-image2"></div>
+    <div id="page4" class="page fullscreen-image4"></div>
+    <div id="page5" class="page fullscreen-image5"></div>
+    <div id="page6" class="page fullscreen-image6"></div>
+    <div id="page7" class="page fullscreen-image7"></div>
+    <div id="page8" class="page fullscreen-image8"></div>
+    <div id="page9" class="page fullscreen-image9"></div>
+    <div id="page10" class="page fullscreen-image10"></div>
 </body>
 </html>
-
