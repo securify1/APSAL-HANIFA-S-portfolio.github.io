@@ -8,94 +8,18 @@
     <link rel="icon" href="my profile.jpeg" type="image/png">
     <title>Apsal Hanifa S</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Reset and General Styles */
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            display: block;
-        }
-
-        /* Fullscreen Images */
-        .page {
-            width: 100%;
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .fullscreen-image1 {
-            background-image: url('image1.jpg');
-        }
-
-        .fullscreen-image2 {
-            background-image: url('image2.jpg');
-        }
-
-        /* Add more as needed */
-
-        /* Circle Icon */
-        .circle-icon {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: url('favicon.png') no-repeat center center;
-            background-size: cover;
-            margin: 20px auto;
-        }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 5px 0;
-            }
-
-            .page {
-                height: auto; /* Let the height be determined by the content */
-                padding: 50px 0; /* Add some padding */
-            }
-
-            .fullscreen-image1, .fullscreen-image2, .fullscreen-image4,
-            .fullscreen-image5, .fullscreen-image6, .fullscreen-image7,
-            .fullscreen-image8, .fullscreen-image9, .fullscreen-image10 {
-                background-size: contain; /* Ensure the image fits within the screen */
-                background-repeat: no-repeat;
-            }
-        }
-    </style>
 </head>
 <body>
+    <!-- Navigation Toggle for Mobile -->
+    <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation Menu -->
     <nav>
-        <ul>
+        <ul class="nav-menu">
             <li><a href="#page2">Home</a></li>
             <li><a href="#page3">About Me</a></li>
             <li><a href="#page4">My Profile</a></li>
@@ -107,9 +31,23 @@
             <li><a href="#page10">Contact</a></li>
         </ul>
     </nav>
-    
-    <div class="circle-icon"></div> <!-- Circle Icon -->
-    
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#page2">Home</a></li>
+            <li><a href="#page3">About Me</a></li>
+            <li><a href="#page4">My Profile</a></li>
+            <li><a href="#page5">Vision</a></li>
+            <li><a href="#page6">Skills</a></li>
+            <li><a href="#page7">Education</a></li>
+            <li><a href="#page8">Certifications</a></li>
+            <li><a href="#page9">Projects</a></li>
+            <li><a href="#page10">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Pages -->
     <div id="page2" class="page fullscreen-image1"></div>
     <div id="page3" class="page fullscreen-image2"></div>
     <div id="page4" class="page fullscreen-image4"></div>
@@ -118,6 +56,64 @@
     <div id="page7" class="page fullscreen-image7"></div>
     <div id="page8" class="page fullscreen-image8"></div>
     <div id="page9" class="page fullscreen-image9"></div>
-    <div id="page10" class="page fullscreen-image10"></div>
+    <div id="page10" class="page contact-form">
+        <main class="contact-main">
+            <section class="contact-section">
+                <h2>Get in Touch</h2>
+                <form action="https://formspree.io/f/mwpekavy" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; APSAL HANIFA S . All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/apsal-hanifa-s-038756227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/apsal_hanifa?igsh=NWk3Mnl4eDk4OTMy">Instagram</a></li>
+                <li><a href="https://www.instagram.com/__tech__life__?igsh=dmNvNTFiMzVsaGRk">Tech life page</a></li>
+                <li><a href="tel:+918807700168">+91 8807700168</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+       const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+});
+
+// Close mobile menu when a menu item is clicked
+document.querySelectorAll('.mobile-menu ul li a').forEach(item => {
+    item.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    });
+});
+
+    </script>
 </body>
 </html>
+
