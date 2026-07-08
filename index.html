@@ -1,119 +1,689 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Passionate IoT & Web Development Specialist | Associate Founder at CODING & APP PRO ACADEMY. Sethu Institute of Technology Student | YouTuber & Instagram Influencer Starting my tech journey in grade 7, I now specialize in IoT and web development. As the Associate Founder and Head of Education at CODING & APP PRO ACADEMY, I share insights through my YouTube channel, Apsal's View, and Instagram page, Tech Life (1,000+ followers). Skilled in programming, game and app development, cybersecurity, and web development, I currently work as a website developer at Kalaimagal Groups of Schools. Proficient in C, C++, Python, HTML, and CSS, I aim to become a full-stack developer and tech entrepreneur. Connect with me to discuss tech, education, and innovative projects!">
-    <meta name="keywords" content="IoT specialist, web development, CODING & APP PRO ACADEMY, YouTube tech channel, Instagram tech influencer, full-stack developer, tech entrepreneur.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="my profile.jpeg" type="image/png">
-    <title>Apsal Hanifa S</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apsal Hanifa | Portfolio</title>
+<meta name="description" content="Frontend Developer | IoT Engineer | Python Programmer">
+<meta name="theme-color" content="#0B0F19">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Typed JS -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Lenis -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+<!-- Vanilla Tilt -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+<!-- Lucide -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Navigation Toggle for Mobile -->
-    <div class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <ul class="nav-menu">
-            <li><a href="#page2">Home</a></li>
-            <li><a href="#page3">About Me</a></li>
-            <li><a href="#page4">My Profile</a></li>
-            <li><a href="#page5">Vision</a></li>
-            <li><a href="#page6">Skills</a></li>
-            <li><a href="#page7">Education</a></li>
-            <li><a href="#page8">Certifications</a></li>
-            <li><a href="#page9">Projects</a></li>
-            <li><a href="#page10">Contact</a></li>
-        </ul>
-    </nav>
+<body class="bg-[#060816] text-white overflow-x-hidden">
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#page2">Home</a></li>
-            <li><a href="#page3">About Me</a></li>
-            <li><a href="#page4">My Profile</a></li>
-            <li><a href="#page5">Vision</a></li>
-            <li><a href="#page6">Skills</a></li>
-            <li><a href="#page7">Education</a></li>
-            <li><a href="#page8">Certifications</a></li>
-            <li><a href="#page9">Projects</a></li>
-            <li><a href="#page10">Contact</a></li>
-        </ul>
-    </div>
+<!-- ================= LOADER ================= -->
+<div id="loader">
+  <div class="loader-content">
+    <h1 class="loader-logo">APSAL</h1>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+    <p>Loading Portfolio...</p>
+  </div>
+</div>
 
-    <!-- Pages -->
-    <div id="page2" class="page fullscreen-image1"></div>
-    <div id="page3" class="page fullscreen-image2"></div>
-    <div id="page4" class="page fullscreen-image4"></div>
-    <div id="page5" class="page fullscreen-image5"></div>
-    <div id="page6" class="page fullscreen-image6"></div>
-    <div id="page7" class="page fullscreen-image7"></div>
-    <div id="page8" class="page fullscreen-image8"></div>
-    <div id="page9" class="page fullscreen-image9"></div>
-    <div id="page10" class="page contact-form">
-        <main class="contact-main">
-            <section class="contact-section">
-                <h2>Get in Touch</h2>
-                <form action="https://formspree.io/f/mwpekavy" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-        </main>
-    </div>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; APSAL HANIFA S . All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="https://www.linkedin.com/in/apsal-hanifa-s-038756227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/apsal_hanifa?igsh=NWk3Mnl4eDk4OTMy">Instagram</a></li>
-                <li><a href="https://www.instagram.com/__tech__life__?igsh=dmNvNTFiMzVsaGRk">Tech life page</a></li>
-                <li><a href="tel:+918807700168">+91 8807700168</a></li>
-            </ul>
-        </div>
-    </footer>
+<!-- ================= CURSOR ================= -->
+<div id="cursor"></div>
+<div id="cursor-blur"></div>
 
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-       const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav-menu');
-const mobileMenu = document.querySelector('.mobile-menu');
+<!-- ================= BACKGROUND ================= -->
+<div class="fixed inset-0 overflow-hidden -z-50">
+  <div class="aurora aurora1"></div>
+  <div class="aurora aurora2"></div>
+  <div class="aurora aurora3"></div>
+  <canvas id="particles"></canvas>
+</div>
 
-navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('active');
-    navMenu.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 left-0 w-full z-50">
+<nav class="max-w-7xl mx-auto px-8">
+<div class="glass-nav rounded-full mt-6">
+<div class="flex justify-between items-center px-8 py-4">
+<a href="#" class="logo">APSAL<span>.</span></a>
+<ul class="hidden lg:flex items-center gap-8">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#freelance">Freelance</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button id="theme-toggle"><i data-lucide="moon"></i></button>
+<a href="#contact" class="hire-btn">Hire Me</a>
+</div>
+</div>
+</div>
+</nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="min-h-screen flex items-center">
+<div class="max-w-7xl mx-auto px-8 w-full">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="status"><span></span>Available for Internship</div>
+<h3 class="hello">Hello, I'm</h3>
+<h1 class="hero-title">Apsal Hanifa</h1>
+<h2 class="hero-typing"><span id="typing"></span></h2>
+<p class="hero-description">
+Computer Science & Engineering (IoT) student passionate about building modern web applications, intelligent IoT solutions, and premium user experiences.
+</p>
+<div class="hero-buttons">
+<a href="#projects" class="primary-btn">View Projects</a>
+<a href="Myresume2026.pdf" download class="secondary-btn">Download Resume</a>
+</div>
+<div class="social-icons">
+<a href="https://github.com" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+<a href="https://www.linkedin.com/in/apsal-hanifa-s-038756227/" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+<a href="mailto:apsalhanifas@gmail.com"><i data-lucide="mail"></i></a>
+<a href="https://www.instagram.com/hanifas__25" target="_blank" rel="noopener"><i data-lucide="instagram"></i></a>
+</div>
+</div>
+<div class="flex justify-center">
+<div class="profile-wrapper">
+<div class="profile-ring"></div>
+<div class="profile-ring delay"></div>
+<div class="profile-image"><img src="profile.jpeg" alt="Profile"></div>
+<div class="floating-card top-left">HTML</div>
+<div class="floating-card top-right">Python</div>
+<div class="floating-card bottom-left">IoT</div>
+<div class="floating-card bottom-right">JavaScript</div>
+</div>
+</div>
+</div>
+</div>
+<div class="scroll-indicator"><span></span></div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats-section">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="stat-card"><h2><span class="counter" data-target="20">0</span>+</h2><p>Projects</p></div>
+<div class="stat-card"><h2><span class="counter" data-target="10">0</span>+</h2><p>Technologies</p></div>
+<div class="stat-card"><h2><span class="counter" data-target="2">0</span>+</h2><p>Years Learning</p></div>
+<div class="stat-card"><h2><span class="counter" data-target="100">0</span>%</h2><p>Dedication</p></div>
+</div>
+</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="section-heading">
+<span>ABOUT ME</span>
+<h2>Building Digital Experiences with Passion & Precision</h2>
+</div>
+<div class="grid lg:grid-cols-2 gap-12 mt-16">
+<div class="glass-card p-10">
+<h3 class="text-3xl font-bold mb-6">Who am I?</h3>
+<p class="text-gray-300 leading-8 mb-6">
+I'm Apsal Hanifa, a Computer Science Engineering student specializing in Internet of Things (IoT). I enjoy creating beautiful web applications, intelligent automation systems, and solving real-world problems through technology.
+</p>
+<p class="text-gray-300 leading-8 mb-8">
+My interests include Frontend Development, UI/UX Design, Python Programming, IoT Projects, AI Integration, and modern web technologies.
+</p>
+<div class="grid grid-cols-2 gap-6">
+<div><span class="text-gray-500">Name</span><h4 class="font-semibold mt-2">Apsal Hanifa</h4></div>
+<div><span class="text-gray-500">Email</span><h4 class="font-semibold mt-2">apsalhanifas@gmail.com</h4></div>
+<div><span class="text-gray-500">Location</span><h4 class="font-semibold mt-2">Madurai, Tamil Nadu</h4></div>
+<div><span class="text-gray-500">Status</span><h4 class="font-semibold mt-2 text-green-400">Available</h4></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="glass-card p-8 hover-card"><i data-lucide="code-2" class="w-10 h-10 text-cyan-400 mb-6"></i><h3 class="text-xl font-semibold mb-3">Web Development</h3><p class="text-gray-400">Modern responsive websites using latest technologies.</p></div>
+<div class="glass-card p-8 hover-card"><i data-lucide="cpu" class="w-10 h-10 text-green-400 mb-6"></i><h3 class="text-xl font-semibold mb-3">IoT</h3><p class="text-gray-400">Hardware integration and automation projects.</p></div>
+<div class="glass-card p-8 hover-card"><i data-lucide="palette" class="w-10 h-10 text-pink-400 mb-6"></i><h3 class="text-xl font-semibold mb-3">UI / UX</h3><p class="text-gray-400">Beautiful user-centered interfaces.</p></div>
+<div class="glass-card p-8 hover-card"><i data-lucide="rocket" class="w-10 h-10 text-yellow-400 mb-6"></i><h3 class="text-xl font-semibold mb-3">Performance</h3><p class="text-gray-400">Fast, optimized and SEO-friendly websites.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="section-heading"><span>MY SKILLS</span><h2>Technologies I Work With</h2></div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+<div class="skill-card"><div class="skill-icon"><img src="images/html.png"></div><h3>HTML5</h3><div class="skill-bar"><div style="width:95%"></div></div></div>
+<div class="skill-card"><div class="skill-icon"><img src="images/css.png"></div><h3>CSS3</h3><div class="skill-bar"><div style="width:92%"></div></div></div>
+<div class="skill-card"><div class="skill-icon"><img src="images/javascript.png"></div><h3>JavaScript</h3><div class="skill-bar"><div style="width:88%"></div></div></div>
+<div class="skill-card"><div class="skill-icon"><img src="images/python.png"></div><h3>Python</h3><div class="skill-bar"><div style="width:90%"></div></div></div>
+<div class="skill-card"><div class="skill-icon"><img src="images/tailwind.png"></div><h3>Tailwind CSS</h3><div class="skill-bar"><div style="width:92%"></div></div></div>
+<div class="skill-card"><div class="skill-icon"><img src="images/git.png"></div><h3>Git & GitHub</h3><div class="skill-bar"><div style="width:86%"></div></div></div>
+<div class="skill-card"><div class="skill-icon"><img src="images/figma.png"></div><h3>Figma</h3><div class="skill-bar"><div style="width:82%"></div></div></div>
+<div class="skill-card"><div class="skill-icon"><img src="images/firebase.png"></div><h3>Firebase</h3><div class="skill-bar"><div style="width:75%"></div></div></div>
+<div class="skill-card"><div class="skill-icon"><img src="images/iot.png"></div><h3>Internet of Things</h3><div class="skill-bar"><div style="width:91%"></div></div></div>
+</div>
+</div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="section-heading"><span>SERVICES</span><h2>What I Can Do</h2></div>
+<div class="grid lg:grid-cols-3 gap-8 mt-16">
+<div class="service-card"><i data-lucide="monitor-smartphone"></i><h3>Frontend Development</h3><p>Responsive and modern websites with premium UI.</p></div>
+<div class="service-card"><i data-lucide="cpu"></i><h3>IoT Solutions</h3><p>Automation, sensors and intelligent embedded systems.</p></div>
+<div class="service-card"><i data-lucide="sparkles"></i><h3>UI / UX Design</h3><p>Creative interfaces with excellent user experience.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ================= FREELANCE WORK ================= -->
+<section id="freelance" class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="section-heading">
+<span>FREELANCE</span>
+<h2>Independent Work Across Three Disciplines</h2>
+<p class="mt-4 text-gray-400 max-w-2xl">
+Alongside my studies I take on freelance and mentoring work — building websites, tutoring students, and designing graphics for clients.
+</p>
+</div>
+
+<div class="grid lg:grid-cols-3 gap-8 mt-16">
+
+<!-- Freelance Web Dev -->
+<div class="freelance-card glass-card overflow-hidden">
+<div class="relative overflow-hidden h-56">
+<img src="images/freelance-web.jpg" class="w-full h-full object-cover project-image" alt="Freelance web development work">
+</div>
+<div class="p-8">
+<div class="freelance-icon"><i data-lucide="monitor-smartphone"></i></div>
+<h3 class="text-2xl font-bold mt-5">Website Development</h3>
+<p class="text-gray-400 mt-4 leading-7">
+Designed and delivered responsive business and portfolio websites for independent clients — from wireframe to deployment.
+</p>
+<div class="flex flex-wrap gap-3 mt-6">
+<span class="tech-tag">HTML/CSS</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">Tailwind</span>
+</div>
+</div>
+</div>
+
+<!-- Freelance Tutor -->
+<div class="freelance-card glass-card overflow-hidden">
+<div class="relative overflow-hidden h-56">
+<img src="images/freelance-tutor.jpg" class="w-full h-full object-cover project-image" alt="Freelance tutoring session">
+</div>
+<div class="p-8">
+<div class="freelance-icon"><i data-lucide="book-open"></i></div>
+<h3 class="text-2xl font-bold mt-5">Tutoring</h3>
+<p class="text-gray-400 mt-4 leading-7">
+One-on-one and group tutoring in Python programming and core computer science fundamentals for school and college students.
+</p>
+<div class="flex flex-wrap gap-3 mt-6">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">CS Fundamentals</span>
+</div>
+</div>
+</div>
+
+<!-- Freelance Graphic Design -->
+<div class="freelance-card glass-card overflow-hidden">
+<div class="relative overflow-hidden h-56">
+<img src="images/freelance-graphic.jpg" class="w-full h-full object-cover project-image" alt="Freelance graphic design work">
+</div>
+<div class="p-8">
+<div class="freelance-icon"><i data-lucide="palette"></i></div>
+<h3 class="text-2xl font-bold mt-5">Graphic Design</h3>
+<p class="text-gray-400 mt-4 leading-7">
+Created posters, social media creatives and branding assets for local businesses and events.
+</p>
+<div class="flex flex-wrap gap-3 mt-6">
+<span class="tech-tag">Figma</span>
+<span class="tech-tag">Branding</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Graphic design mini gallery -->
+<div class="mt-10">
+<h3 class="text-xl font-semibold mb-6 text-gray-300">Graphic Design — Selected Work</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="gallery-item"><img src="images/graphic-work-1.jpg" alt="Graphic design sample 1"></div>
+<div class="gallery-item"><img src="images/graphic-work-2.jpg" alt="Graphic design sample 2"></div>
+<div class="gallery-item"><img src="images/graphic-work-3.jpg" alt="Graphic design sample 3"></div>
+<div class="gallery-item"><img src="images/graphic-work-4.jpg" alt="Graphic design sample 4"></div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="section-heading">
+<span>PORTFOLIO</span>
+<h2>Featured Projects</h2>
+<p class="mt-4 text-gray-400 max-w-2xl">
+Some of my recent work showcasing web development, IoT automation and UI design.
+</p>
+</div>
+
+<div class="grid lg:grid-cols-2 gap-10 mt-20">
+
+<!-- PROJECT 1 -->
+<div class="project-card glass-card overflow-hidden">
+<div class="relative overflow-hidden">
+<img src="images/project1.jpg" class="w-full h-72 object-cover project-image" alt="Smart Crop Protection System">
+<div class="project-overlay">
+<a href="#" class="project-btn">Live Demo</a>
+<a href="#" class="project-btn">GitHub</a>
+</div>
+</div>
+<div class="p-8">
+<span class="project-category">IoT Project</span>
+<h3 class="text-3xl font-bold mt-4">Smart Crop Protection System</h3>
+<p class="text-gray-400 mt-5 leading-8">
+AI-powered crop protection system using IoT, sensors and automated scent barriers to prevent wildlife intrusion while sending real-time alerts.
+</p>
+<div class="flex flex-wrap gap-3 mt-8">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">IoT</span>
+<span class="tech-tag">OpenCV</span>
+<span class="tech-tag">ESP32</span>
+</div>
+</div>
+</div>
+
+<!-- PROJECT 2 -->
+<div class="project-card glass-card overflow-hidden">
+<div class="relative overflow-hidden">
+<img src="images/project2.jpg" class="w-full h-72 object-cover project-image" alt="Freelance Business Website">
+<div class="project-overlay">
+<a href="#" class="project-btn">Live Demo</a>
+<a href="#" class="project-btn">GitHub</a>
+</div>
+</div>
+<div class="p-8">
+<span class="project-category">Web Design</span>
+<h3 class="text-3xl font-bold mt-4">Freelance Business Website</h3>
+<p class="text-gray-400 mt-5 leading-8">
+Modern responsive website designed with premium UI, animations and optimized performance for business clients.
+</p>
+<div class="flex flex-wrap gap-3 mt-8">
+<span class="tech-tag">HTML</span>
+<span class="tech-tag">CSS</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">Tailwind</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Hackathons & Symposiums -->
+<div class="mt-24">
+<div class="section-heading">
+<span>COMPETITIONS</span>
+<h2>Hackathons & Symposiums</h2>
+<p class="mt-4 text-gray-400 max-w-2xl">
+College projects presented and built under time pressure — proof from the events I've taken part in.
+</p>
+</div>
+
+<div class="grid lg:grid-cols-3 gap-8 mt-16">
+
+<div class="hack-card glass-card overflow-hidden">
+<div class="relative overflow-hidden h-48">
+<img src="images/hackathon-1.jpg" class="w-full h-full object-cover project-image" alt="Hackathon participation photo">
+</div>
+<div class="p-7">
+<span class="project-category">Hackathon</span>
+<h3 class="text-xl font-bold mt-4">College Hackathon</h3>
+<p class="text-gray-400 mt-3 text-sm leading-6">
+Built and pitched a working prototype within 24 hours as part of a team.
+</p>
+<a href="#" class="proof-link">View proof photo <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+</div>
+
+<div class="hack-card glass-card overflow-hidden">
+<div class="relative overflow-hidden h-48">
+<img src="images/symposium-1.jpg" class="w-full h-full object-cover project-image" alt="Technical symposium photo">
+</div>
+<div class="p-7">
+<span class="project-category">Symposium</span>
+<h3 class="text-xl font-bold mt-4">Technical Symposium</h3>
+<p class="text-gray-400 mt-3 text-sm leading-6">
+Presented a project paper and demo at an inter-college technical symposium.
+</p>
+<a href="#" class="proof-link">View proof photo <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+</div>
+
+<div class="hack-card glass-card overflow-hidden">
+<div class="relative overflow-hidden h-48">
+<img src="images/hackathon-2.jpg" class="w-full h-full object-cover project-image" alt="Second hackathon participation photo">
+</div>
+<div class="p-7">
+<span class="project-category">Hackathon</span>
+<h3 class="text-xl font-bold mt-4">Innovation Challenge</h3>
+<p class="text-gray-400 mt-3 text-sm leading-6">
+Competed with an IoT-based solution in a state-level innovation challenge.
+</p>
+<a href="#" class="proof-link">View proof photo <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+</div>
+
+</div>
+
+<!-- Video proof strip -->
+<div class="mt-10 grid md:grid-cols-2 gap-6">
+<div class="video-card glass-card overflow-hidden">
+<video controls poster="images/hackathon-video-poster.jpg" class="w-full h-full">
+<source src="videos/hackathon-highlight.mp4" type="video/mp4">
+</video>
+</div>
+<div class="video-card glass-card overflow-hidden">
+<video controls poster="images/symposium-video-poster.jpg" class="w-full h-full">
+<source src="videos/symposium-highlight.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ================= TRAINING & WORKSHOPS ================= -->
+<section id="training" class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="section-heading">
+<span>TEACHING & TRAINING</span>
+<h2>Sharing What I Know</h2>
+<p class="mt-4 text-gray-400 max-w-2xl">
+Beyond building, I enjoy training others — from mentoring juniors to running full-day workshops.
+</p>
+</div>
+
+<div class="grid lg:grid-cols-2 gap-10 mt-16">
+
+<!-- CAP Academy Mentor -->
+<div class="training-card glass-card overflow-hidden">
+<div class="relative overflow-hidden h-64">
+<img src="images/cap-academy-mentor.jpg" class="w-full h-full object-cover project-image" alt="Mentoring at CAP Academy">
+</div>
+<div class="p-9">
+<span class="project-category">Mentorship</span>
+<h3 class="text-2xl font-bold mt-4">Mentor, CAP Academy</h3>
+<p class="text-gray-400 mt-4 leading-7">
+Serving as a mentor at CAP Academy, guiding students on programming fundamentals, project building and career direction in tech.
+</p>
+</div>
+</div>
+
+<!-- IoT & Robotics Teacher Training -->
+<div class="training-card glass-card overflow-hidden">
+<div class="relative overflow-hidden h-64">
+<img src="images/kalaimagal-iot-training.jpg" class="w-full h-full object-cover project-image" alt="IoT and robotics teacher training program">
+</div>
+<div class="p-9">
+<span class="project-category">Teacher Training</span>
+<h3 class="text-2xl font-bold mt-4">IoT & Robotics Teacher Training</h3>
+<p class="text-gray-400 mt-4 leading-7">
+Handled a teacher training program on IoT and Robotics at Kalaimagal Higher Secondary School, equipping teaching staff to guide students in embedded systems and automation.
+</p>
+</div>
+</div>
+
+</div>
+
+<!-- One Day Workshop -->
+<div class="mt-10 training-card glass-card overflow-hidden lg:flex">
+<div class="relative overflow-hidden lg:w-2/5 h-64 lg:h-auto">
+<img src="images/one-day-workshop.jpg" class="w-full h-full object-cover project-image" alt="One day technical workshop">
+</div>
+<div class="p-9 lg:w-3/5">
+<span class="project-category">Full-Day Workshop</span>
+<h3 class="text-2xl font-bold mt-4">One-Day Technical Workshop</h3>
+<p class="text-gray-400 mt-4 leading-7">
+Independently planned and conducted a full technical workshop, 9:30 AM – 5:30 PM, covering hands-on programming and IoT sessions for students.
+</p>
+<div class="flex items-center gap-3 mt-5 text-sm text-gray-400">
+<i data-lucide="clock" class="w-4 h-4 text-cyan-400"></i>
+9:30 AM – 5:30 PM · Solo-conducted
+</div>
+</div>
+</div>
+
+<!-- Workshop gallery + video -->
+<div class="mt-10">
+<h3 class="text-xl font-semibold mb-6 text-gray-300">Workshop Gallery</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="gallery-item"><img src="images/workshop-photo-1.jpg" alt="Workshop photo 1"></div>
+<div class="gallery-item"><img src="images/workshop-photo-2.jpg" alt="Workshop photo 2"></div>
+<div class="gallery-item"><img src="images/workshop-photo-3.jpg" alt="Workshop photo 3"></div>
+<div class="gallery-item"><img src="images/workshop-photo-4.jpg" alt="Workshop photo 4"></div>
+</div>
+<div class="mt-6 video-card glass-card overflow-hidden max-w-2xl">
+<video controls poster="images/workshop-video-poster.jpg" class="w-full h-full">
+<source src="videos/workshop-highlight.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="py-32">
+<div class="max-w-6xl mx-auto px-8">
+<div class="section-heading"><span>CAREER</span><h2>Experience Timeline</h2></div>
+<div class="timeline mt-20">
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content glass-card">
+<span class="year">2025</span>
+<h3>Technical Workshop Trainer</h3>
+<h4>Kalaimagal MHSS</h4>
+<p>Conducted technical workshops on programming, IoT and emerging technologies while mentoring students.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content glass-card">
+<span class="year">2025</span>
+<h3>IoT & Robotics Teacher Training Program</h3>
+<h4>Kalaimagal Higher Secondary School</h4>
+<p>Handled a dedicated teacher training program on IoT and Robotics, enabling school staff to mentor students in embedded systems and automation.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content glass-card">
+<span class="year">2025 - Present</span>
+<h3>Mentor</h3>
+<h4>CAP Academy</h4>
+<p>Mentoring students on programming fundamentals, project development and career guidance in technology.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content glass-card">
+<span class="year">2025 - Present</span>
+<h3>Freelance Web Developer, Tutor & Graphic Designer</h3>
+<h4>Self Employed</h4>
+<p>Designed responsive websites and landing pages, tutored students in Python and CS fundamentals, and created graphic design assets for clients.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content glass-card">
+<span class="year">2026</span>
+<h3>Looking for Internship</h3>
+<h4>Frontend / Python / IoT</h4>
+<p>Currently seeking internship opportunities to contribute and grow professionally.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="section-heading"><span>ACHIEVEMENTS</span><h2>Certificates & Learning</h2></div>
+<div class="grid md:grid-cols-3 gap-8 mt-16">
+
+<div class="glass-card certificate-card">
+<i data-lucide="award"></i>
+<h3>Python Programming</h3>
+<p>Completed professional Python certification.</p>
+<a href="certificates/python-certificate.pdf" target="_blank" class="proof-link">View certificate <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+
+<div class="glass-card certificate-card">
+<i data-lucide="badge-check"></i>
+<h3>Frontend Development</h3>
+<p>Responsive Web Design & JavaScript Development.</p>
+<a href="certificates/frontend-certificate.pdf" target="_blank" class="proof-link">View certificate <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+
+<div class="glass-card certificate-card">
+<i data-lucide="cpu"></i>
+<h3>Internet of Things</h3>
+<p>Embedded Systems & Automation Projects.</p>
+<a href="certificates/iot-certificate.pdf" target="_blank" class="proof-link">View certificate <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+
+<div class="glass-card certificate-card">
+<i data-lucide="graduation-cap"></i>
+<h3>Teacher Training Program</h3>
+<p>IoT & Robotics teacher training, Kalaimagal Higher Secondary School.</p>
+<a href="certificates/teacher-training-certificate.pdf" target="_blank" class="proof-link">View certificate <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+
+<div class="glass-card certificate-card">
+<i data-lucide="users"></i>
+<h3>CAP Academy Mentorship</h3>
+<p>Recognition for mentoring students at CAP Academy.</p>
+<a href="certificates/cap-academy-certificate.pdf" target="_blank" class="proof-link">View certificate <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+
+<div class="glass-card certificate-card">
+<i data-lucide="trophy"></i>
+<h3>Hackathon Participation</h3>
+<p>Certificate of participation, college-level hackathon.</p>
+<a href="certificates/hackathon-certificate.pdf" target="_blank" class="proof-link">View certificate <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= CONNECT / SOCIAL ================= -->
+<section id="connect" class="py-32">
+<div class="max-w-6xl mx-auto px-8">
+<div class="section-heading"><span>CONNECT</span><h2>Follow the Journey</h2></div>
+<div class="grid md:grid-cols-2 gap-8 mt-16">
+
+<a href="https://www.instagram.com/hanifas__25" target="_blank" rel="noopener" class="social-follow-card glass-card">
+<div class="social-follow-icon instagram"><i data-lucide="instagram"></i></div>
+<div>
+<h3 class="text-xl font-bold">Instagram</h3>
+<p class="text-gray-400 mt-1">@hanifas__25 — behind-the-scenes of projects, workshops and freelance work.</p>
+</div>
+<i data-lucide="arrow-up-right" class="ml-auto w-5 h-5 text-gray-400"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/apsal-hanifa-s-038756227/" target="_blank" rel="noopener" class="social-follow-card glass-card">
+<div class="social-follow-icon linkedin"><i data-lucide="linkedin"></i></div>
+<div>
+<h3 class="text-xl font-bold">LinkedIn</h3>
+<p class="text-gray-400 mt-1">Apsal Hanifa S — professional updates, certifications and career milestones.</p>
+</div>
+<i data-lucide="arrow-up-right" class="ml-auto w-5 h-5 text-gray-400"></i>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-32">
+<div class="max-w-6xl mx-auto px-8">
+<div class="glass-card p-12 rounded-3xl">
+<div class="section-heading text-center"><span>CONTACT</span><h2>Let's Build Something Amazing</h2></div>
+<form class="grid md:grid-cols-2 gap-6 mt-16">
+<input type="text" placeholder="Your Name" class="input-field">
+<input type="email" placeholder="Your Email" class="input-field">
+<input type="text" placeholder="Subject" class="input-field md:col-span-2">
+<textarea rows="7" placeholder="Your Message" class="input-field md:col-span-2"></textarea>
+<button class="primary-btn md:col-span-2">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-12 border-t border-white/10">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div>
+<h2 class="text-2xl font-bold">APSAL<span class="text-cyan-400">.</span></h2>
+<p class="text-gray-500 mt-2">Frontend Developer • IoT Engineer • Python Programmer</p>
+</div>
+<div class="flex gap-6">
+<a href="https://github.com" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+<a href="https://www.linkedin.com/in/apsal-hanifa-s-038756227/" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+<a href="https://www.instagram.com/hanifas__25" target="_blank" rel="noopener"><i data-lucide="instagram"></i></a>
+<a href="mailto:apsalhanifas@gmail.com"><i data-lucide="mail"></i></a>
+</div>
+</div>
+<div class="border-t border-white/10 mt-10 pt-8 text-center text-gray-500">
+© 2026 Apsal Hanifa. Designed & Developed with ❤️ using HTML, Tailwind CSS & JavaScript.
+</div>
+</div>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="script.js"></script>
+<script>
+lucide.createIcons();
+VanillaTilt.init(document.querySelectorAll(".glass-card"),{
+max:10,
+speed:400,
+glare:true,
+"max-glare":0.2
 });
-
-// Close mobile menu when a menu item is clicked
-document.querySelectorAll('.mobile-menu ul li a').forEach(item => {
-    item.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        navMenu.classList.remove('active');
-        mobileMenu.classList.remove('active');
-    });
-});
-
-    </script>
+</script>
 </body>
 </html>
-
